@@ -4,6 +4,6 @@ app_name = 'app'
 urlpatterns = [
     path('', views.index, name='index'),
     path('app/', views.appView, name='app'),
-    path('addView/',views.addView), 
+    path('end/',views.addView,name='end'), 
      
 ] 

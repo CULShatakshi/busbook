@@ -19,7 +19,11 @@ def addView(request):
     # x = request.POST.get('todotext')
     new_item = BusListItem()
     new_item.content = request.POST.get('content')
+    new_item.last_name=request.POST.get('last_name')
+    new_item.date=request.POST.get('date')
+    new_item.city=request.POST.get('city')
     new_item.save()
     
-    return HttpResponseRedirect('/app/') 
+    
+    return HttpResponseRedirect('/end/') 
 
